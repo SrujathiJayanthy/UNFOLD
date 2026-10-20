@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>UNFOLD</title>
+<meta name="description" content="UNFOLD: interactive learning for every guest-speaker session. Ideas worth opening up.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&family=Instrument+Sans:wght@400..700&family=DM+Mono:wght@400;500&family=Silkscreen:wght@400;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#app">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="#home" aria-label="UNFOLD home"><span class="logo__mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>UNFOLD</a>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav">MENU</button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#home" data-nav="home">Home</a>
+      <a href="#sessions" data-nav="sessions">Sessions</a>
+      <a href="#progress" data-nav="progress">My progress</a>
+      <a href="#about" data-nav="about">About</a>
+    </nav>
+    <a class="hdr-stat mono" id="hdr-stat" href="#progress" aria-label="Your level and XP">Lv 1 · 0 XP</a>
+  </div>
+</header>
+<div id="veil" class="veil" aria-hidden="true"><i class="veil__ring"></i><i class="veil__scan"></i><span class="veil__label mono"></span></div>
+<main id="app" tabindex="-1"></main>
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="logo">UNFOLD</span>
+    <em>Ideas worth opening up.</em>
+    <span class="mono">RE:THINK · progress saved in this browser only</span>
+  </div>
+</footer>
+<div id="live-region" class="sr-only" aria-live="polite"></div>
+<script src="sessions.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
